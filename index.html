@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+</head>
+<body class= " bg-black text-white"><center>
+    <img src="bulb-go-off-img.webp" id="bulb" class="w-[220px] h-[320px]" alt="bulb">
+
+   <img src="cat-eyes-img copy.webp" id="cat" class="w-[320px] h-[320px]" alt="cat image">
+
+<p id="para">Switched Off</p>
+<button id="btno">ON</button>
+<button id="btnf">OFF</button>
+
+<script>
+    const imgbulb = document.getElementById("bulb")
+    const imgcat = document.getElementById("cat")
+    const parae = document.getElementById("para")
+    const onbtn = document.getElementById("btno")
+    const offbtn = document.getElementById("btnf")
+
+    onbtn.addEventListener("click",()=>{
+       
+        imgbulb.src ="bulb-go-on-img.webp"
+        imgcat.src ="cat-img.webp"
+        parae.textContent=" Switched ON"
+        onbtn.textContent="OFF"
+
+    })
+
+    offbtn.addEventListener("click", () => {
+         console.log("btno")
+    })
+
+</script>
+</center>
+</body>
+</html>
+
+
